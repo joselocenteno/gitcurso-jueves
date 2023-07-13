@@ -3,10 +3,10 @@ DROP PROCEDURE IF EXISTS SP_LOGIN_BY_TOKEN $$
 CREATE PROCEDURE SP_LOGIN_BY_TOKEN(IN userData JSON, OUT rowCount INT)
 BEGIN
 	DECLARE data_token					VARCHAR(64);
-	DECLARE vJsonEsValido 				INT;
+	DECLARE vJsonEsValido 					INT;
 	DECLARE vItems 						INT;
 	DECLARE vSentencia 					TEXT;
-	DECLARE vSentenciaToken				TEXT;
+	DECLARE vSentenciaToken					TEXT;
 	DECLARE vUsuarioID 					INT(8);
 	DECLARE vPassword 					VARCHAR(64);
 	DECLARE vEstatus 					INT(1);
